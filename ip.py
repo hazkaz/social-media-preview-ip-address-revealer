@@ -6,9 +6,13 @@ import os
 
 app = Flask(__name__)
 
-@app.route("/",methods=["GET"])
+
+@app.route("/", methods=["GET"])
 def get_ip():
-    return render_template('index.html',ip_address=request.headers["x-forwarded-for"].split(",")[-1])
+    ip = request.headers.get("x-forwarded-for")
+    ip = ip.split(",")[-1] if ip else request.remote_addr
+    return render_template('index.html', ip_address=ip)
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
