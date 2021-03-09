@@ -1,0 +1,7 @@
+{
+    "name": "Social media preview ip address revealer",
+    "description": "A tiny flask app that returns an HTML page with the og:title as the ip address of the machine trying to access it",
+    "repository": "https://github.com/hazkaz/social-media-preview-ip-address-revealer",
+    "keywords": ["flask","python"]
+  }
+  
