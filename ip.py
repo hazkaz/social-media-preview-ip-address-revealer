@@ -7,8 +7,9 @@ import os
 app = Flask(__name__)
 
 
-@app.route("/", methods=["GET"])
-def get_ip():
+@app.route("/",defaults={'path':''})
+@app.route("/<path:path>", methods=["GET"])
+def get_ip(path):
     ip = request.headers.get("x-forwarded-for")
     ip = ip.split(",")[-1] if ip else request.remote_addr
     return render_template('index.html', ip_address=ip)
