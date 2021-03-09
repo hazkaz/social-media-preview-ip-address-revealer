@@ -1,1 +1,1 @@
-web: sudo python3flask run --host 0.0.0.0
+web: python3 -m flask run --host 0.0.0.0
