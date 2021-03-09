@@ -2,7 +2,7 @@
 
 ## IP Address Revealer for Social Media Previews
 
-![facebook ip reveal](https://github.com/hazkaz/social-media-preview-ip-address-revealer/fb.png)
+![facebook ip reveal](https://github.com/hazkaz/social-media-preview-ip-address-revealer/blob/master/fb.png)
 
 Something I made on a whim
 
